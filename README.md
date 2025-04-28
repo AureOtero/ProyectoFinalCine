@@ -4,7 +4,7 @@ Este proyecto es un programa en C++ que simula la compra de boletos de cine, per
 
 <h1>¿Cómo usarlo?</h1>
 
-- Compilar el archivo `.cpp` usando un compilador de C++ (por ejemplo, `g++`).
+- Compilar el archivo `.cpp` usando un compilador de C++.
 - Ejecutar el programa.
 - Seguir las instrucciones en consola:
   - Escoger una película
@@ -13,16 +13,31 @@ Este proyecto es un programa en C++ que simula la compra de boletos de cine, per
   - Reservar los asientos
 - Al finalizar, el programa imprimirá un recibo en pantalla y lo guardará en el archivo `ENAO recibo.txt`.
 
-<h1>Requisitos</h1>
+<h1>Historial de versiones</h1>
 
-- C++ versión 11 o superior
-- Compilador compatible (`g++`, `clang`, Visual Studio, etc.)
-- Editor de texto (Visual Studio Code, CLion, etc.)
 
-<h1>Versiones</h1>
-- Reserva de asientos 
-- Seleccion de pelicula, dia, tanda
-- Genera recibo en consola y archivo de texto
+### Version 1.00
+- Implementar selección de película, día y tanda
+- Implementar selección y reserva de asientos
+- Calcular subtotal, impuestos y total de la compra
+- Generar recibo en consola
+- Guardar recibo en un archivo de texto (`ENAO recibo.txt`)
+
+### Version 1.01
+- Validaciones mejoradas para la selección de asientos (no permitir sillas ya reservadas)
+- Validaciones mejoradas para opciones de película, día y tanda (no permitir entradas inválidas)
+
+### Version 1.02
+- Formato mejorado del recibo en consola y archivo
+- Mensajes de error más claros para el usuario
+- Añadido número de sala aleatorio para la función
+
+### Version 1.03
+- Refactorización de código: separación de funciones por responsabilidades
+- Uso de `fixed` y `setprecision(2)` para mostrar precios con dos decimales
+- Agregado control de errores al guardar el archivo de recibo
+
+
 
 <h1>Licencia</h1>
 
