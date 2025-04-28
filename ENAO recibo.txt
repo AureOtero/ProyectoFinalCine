@@ -1,0 +1,10 @@
+*****************ENAO Cinema*****************
+************Gracias por visitarnos***********
+***Aqui tiene su recibo con su informacion***
+Pelicula: Cars
+Dia: Mayo 4
+Tanda: 4:50 PM
+Sala 4
+Sus asientos son: 17 18 19 
+Subtotal: $21.00
+Total: $23.41
