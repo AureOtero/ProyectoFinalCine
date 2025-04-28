@@ -49,7 +49,7 @@ vector<int> sillas() {
         if (silla >= 1 && silla <= 50) {
             //Verifica si la silla esta disponible y no reservada
             if (find(asientosReservados.begin(), asientosReservados.end(), silla) == asientosReservados.end()) {
-                sillasEsco.push_back(silla); // Añade silla seleccionada a la lista
+                sillasEsco.push_back(silla); // AÃ±ade silla seleccionada a la lista
                 asientosReservados.push_back(silla); // Marca la silla  como reservada
             }
             else {
@@ -62,7 +62,7 @@ vector<int> sillas() {
         }
 
         cout << "Desea escoger otra silla? (y/n): ";
-        cin >> masSillas;                                 // Le pregunta al usuario si quiere añadir otra silla
+        cin >> masSillas;                                 // Le pregunta al usuario si quiere aÃ±adir otra silla
     } while (masSillas == 'y' || masSillas == 'Y');      // Sigue si el usuario quiere seleccionar mas sillas
     cout << "\n";
 
@@ -80,9 +80,9 @@ string estreno(int& opcionM, int& opcionD, int& opcionT) {
     // Mostrar opciones de peliculas
     cout << "************ Peliculas ************" << endl;
 
-    // Referencia: BLACKBOX.AI. (2025). Size de vectores en C++. 
+    // Referencia: BLACKBOX.AI. (2025). Size de vectores en C++. Lineas 86-87, 107-108, 128-129
 
-    // Recorre el vector de la película y muestra cada película con su índice correspondiente
+    // Recorre el vector de la pelÃ­cula y muestra cada pelÃ­cula con su Ã­ndice correspondiente
     for (size_t i = 0; i < movie.size(); ++i) {
         cout << i + 1 << " " << movie[i] << endl;
     }
@@ -103,7 +103,7 @@ string estreno(int& opcionM, int& opcionD, int& opcionT) {
     // Mostrar opciones de dias
     cout << "************ Dias ************" << endl;
 
-    // Recorre el vector del dia y muestra cada dia con su índice correspondiente
+    // Recorre el vector del dia y muestra cada dia con su Ã­ndice correspondiente
     for (size_t i = 0; i < day.size(); ++i) {
         cout << i + 1 << " " << day[i] << endl;
     }
@@ -124,7 +124,7 @@ string estreno(int& opcionM, int& opcionD, int& opcionT) {
     // Mostrar opciones de tandas
     cout << "************ Tandas ************" << endl;
 
-    // Recorre el vector de la tanda y muestra cada tanda con su índice correspondiente
+    // Recorre el vector de la tanda y muestra cada tanda con su Ã­ndice correspondiente
     for (size_t i = 0; i < tanda.size(); ++i) {
         cout << i + 1 << " " << tanda[i] << endl;
     }
@@ -147,11 +147,11 @@ string estreno(int& opcionM, int& opcionD, int& opcionT) {
 // Hecho por Aurelis y Edward
 int main() {
 
-    vector<int> sillasEsco; //Vector para almacenar los números de asientos seleccionados
+    vector<int> sillasEsco; //Vector para almacenar los nÃºmeros de asientos seleccionados
     double subtotal = 0.0; // Variable para mantener el subtotal antes de impuestos
-    int opcionM, opcionD, opcionT; // Variables para almacenar selecciones del usuario para película, día y hora del espectáculo
-    srand(time(0));  // Siembra el generador de números aleatorios con la hora actual
-    int randomSala = (rand() % 9) + 1;  // Generar un número de habitación aleatorio entre 1 y 10
+    int opcionM, opcionD, opcionT; // Variables para almacenar selecciones del usuario para pelÃ­cula, dÃ­a y hora del espectÃ¡culo
+    srand(time(0));  // Siembra el generador de nÃºmeros aleatorios con la hora actual
+    int randomSala = (rand() % 9) + 1;  // Generar un nÃºmero de habitaciÃ³n aleatorio entre 1 y 10
 
     // Llama la funcion de estreno para conseguir la pelicula, dia y tanda selecionada
     string seleccion = estreno(opcionM, opcionD, opcionT);
@@ -170,7 +170,7 @@ int main() {
     cout << "************Gracias por visitarnos***********\n";
     cout << "***Aqui tiene su recibo con su informacion***\n";
 
-    // Lista la película, el día y la hora de la función seleccionados
+    // Lista la pelÃ­cula, el dÃ­a y la hora de la funciÃ³n seleccionados
     vector<string> movie = { "Harry Potter", "Cars", "One Piece", "Annabelle", "Oceans 8" };
     cout << "Pelicula: " << movie[opcionM - 1] << endl;
 
